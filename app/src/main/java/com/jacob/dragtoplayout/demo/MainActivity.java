@@ -27,7 +27,8 @@ public class MainActivity extends FragmentActivity {
         mRelativeTopView = (RelativeLayout) findViewById(R.id.relative_top_view);
         mRelativeContentView = (RelativeLayout) findViewById(R.id.relative_content_view);
         mListView = (ListView) findViewById(R.id.list_view);
-        mListView.setAdapter(new ArrayAdapter<String>(getApplication(),android.R.layout.simple_list_item_1,mListString));
+        mListView.setAdapter(new ArrayAdapter<String>(getApplication(),
+                R.layout.layout_list_item,mListString));
     }
 
     private void initData(){
